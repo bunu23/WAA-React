@@ -1,0 +1,1 @@
+Write an application that shows 2 different lists of tasks, a todo task list and a done task list. Every task has an task number and a name. You should be able to move tasks from the todo list to the done list and vice versa
