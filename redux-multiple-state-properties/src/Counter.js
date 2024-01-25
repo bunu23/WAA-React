@@ -4,7 +4,7 @@ const Counter=()=>{
 
     const dispatch=useDispatch();
     const counter=useSelector(state=>state.counter);
-    // const greeting=useSelector(state=>state.greeting);
+    const greeting=useSelector(state=>state.greeting);
 
     const incrementHandler=()=>{
 
@@ -19,8 +19,8 @@ const Counter=()=>{
 
         <div>
             <h2>Counter</h2>
-            {/* <div>Hello {greeting}</div> */}
-            <div>{counter}</div>
+            <div> {greeting}</div>
+            <div>Counter is : {counter}</div>
             <button onClick={incrementHandler} >Increment</button>
             <button onClick={decrementHandler}>Decrement</button>
         </div>

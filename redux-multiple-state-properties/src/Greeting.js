@@ -6,7 +6,7 @@ const Greeting=()=>{
 const dispatch=useDispatch();
 const[name,setName]=useState("");
 const greetingMessage=useSelector(state=>state.greeting);
-// const counter=useSelector(state=>state.counter);
+const counter=useSelector(state=>state.counter);
 
 const greetingHandler=()=>{
     dispatch({type:"getgreeting",name:name})
@@ -16,7 +16,7 @@ return(
 
     <div>
         <h2>Greeting</h2>
-     {/* <div>Current counter is : {counter}</div> */}
+     <div>Current counter is : {counter}</div>
 <div>{greetingMessage}</div>
         <div>
             Name:

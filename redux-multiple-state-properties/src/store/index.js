@@ -19,7 +19,7 @@ const counterReducer=(state=initialState,action)=>{
 {
     return{
         counter:state.counter,
-        greeting:"hello"+action.name
+        greeting:"hello "+action.name
     }
 }
 return state;
